@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { LogService } from './services/log.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-more-features';
+
+  constructor(private log:LogService,private router:Router){
+         this.log.status=true;
+         this.log.usertype="user" 
+  }
+
+  ngAfterViewInit(){
+    if(!this.log.getStatus()){
+                
+      this.router.navigate(['login'])
+   }
+   else{
+     if(this.log.usertype=="admin")
+       this.router.navigate(['admin/home']);
+     else
+       this.router.navigate(['user/home']);
+   }
+  }
 }
