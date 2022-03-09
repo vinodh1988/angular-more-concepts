@@ -17,7 +17,7 @@ const route:Routes=[
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(route)
+    RouterModule.forChild(route)
   ]
 })
 export class AdminModule { }
