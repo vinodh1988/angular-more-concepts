@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "anil@gmail.com",
+      "password": "$2a$10$qLCzxp8bYoFl0TUnM3khkOQed/oj6p0Vi9m91/WIlZqn6dzwsD4Iu",
+      "firstname": "Anil",
+      "lastname": "Kumar",
+      "id": 1
+    },
+    {
+      "email": "rahul@gmail.com",
+      "password": "$2a$10$Uar7V8dLDhHuiJrRu1AzN.IhKjvVJ6.hJ9AYOPGa4sU7MwtykuU9K",
+      "firstname": "Rahul",
+      "lastname": "krishna",
+      "id": 2
+    }
+  ]
+}
