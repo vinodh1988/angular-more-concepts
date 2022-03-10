@@ -3,18 +3,26 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
-import { MaterialModule } from '../material/material.module';
+import { UserhomeComponent } from './userhome/userhome.component';
+
 
 const route:Routes=[
 
   {
   path:"home",
   component: HomeComponent,
+  children: [
+    {
+      path: "",
+      component: UserhomeComponent
+    }
+  ]
 }]
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    UserhomeComponent
   ],
   imports: [
     CommonModule,
