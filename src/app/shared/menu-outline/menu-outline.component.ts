@@ -27,6 +27,8 @@ username:any=""
        this.cartCount=JSON.parse(cart).length;
     else
        this.cartCount=0;
+
+       this.router.navigate(['temp'], {relativeTo:this.route});
   }
   
   navigate(url:string){

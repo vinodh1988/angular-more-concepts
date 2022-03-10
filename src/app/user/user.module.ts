@@ -17,7 +17,9 @@ const route:Routes=[
       component: UserhomeComponent
     }
   ]
-}]
+}
+
+]
 
 @NgModule({
   declarations: [
