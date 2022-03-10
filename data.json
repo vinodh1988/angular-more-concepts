@@ -7,17 +7,11 @@
       "lastname": "Kumar",
       "id": 1
     },
+  
     {
       "email": "rahul@gmail.com",
-      "password": "$2a$10$Uar7V8dLDhHuiJrRu1AzN.IhKjvVJ6.hJ9AYOPGa4sU7MwtykuU9K",
-      "firstname": "Rahul",
-      "lastname": "krishna",
-      "id": 2
-    },
-    {
-      "email": "rahul123@gmail.com",
       "password": "$2a$10$GN3udmMj3FOG3Ya.tp5VmuBqBVwY0dYU1ro74BpVxs8xB0./Gqw8m",
-      "firstname": "Rahul",
+      "username": "rahul",
       "lastname": "krishna",
       "type": "user",
       "id": 3
@@ -25,7 +19,7 @@
     {
       "email": "roger@gmail.com",
       "password": "$2a$10$8VfL/mTrUsF7CsmFZBNCXuYKao0PM9CrOIxTn0iqWYoKD0vwPE1AC",
-      "firstname": "Roger",
+      "username": "roger",
       "lastname": "Federer",
       "type": "admin",
       "id": 4

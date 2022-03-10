@@ -11,8 +11,7 @@ export class AppComponent {
   title = 'angular-more-features';
 
   constructor(private log:LogService,private router:Router){
-         this.log.status=true;
-         this.log.usertype="user" 
+          
   }
 
   ngAfterViewInit(){
