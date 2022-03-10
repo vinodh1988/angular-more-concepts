@@ -7,7 +7,6 @@
       "lastname": "Kumar",
       "id": 1
     },
-  
     {
       "email": "rahul@gmail.com",
       "password": "$2a$10$GN3udmMj3FOG3Ya.tp5VmuBqBVwY0dYU1ro74BpVxs8xB0./Gqw8m",
@@ -23,6 +22,14 @@
       "lastname": "Federer",
       "type": "admin",
       "id": 4
+    },
+    {
+      "email": "kiran@gmail.com",
+      "password": "$2a$10$QxNGN1c9fIgWiQ5KHNwZnOWlZq8cJm/xM27oriUKLGptO8s9Pb2bq",
+      "username": "kiran",
+      "type": "user",
+      "id": 5
     }
   ]
+
 }

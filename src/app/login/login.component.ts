@@ -94,9 +94,9 @@ export class LoginComponent implements OnInit {
          this.rstatus=true;
        
                   this.rstatus=true;
-                  let obj={username:this.rusername,password:this.rpassword,usertype:"user",email: this.remail}
-                  this.log.register(obj).subscribe(
-                     (result:any)=>{
+                  let obj={username:this.rusername,password:this.rpassword,type:"user",email: this.remail}
+                  this.log.register(obj).subscribe({
+                    next: (result:any)=>{
                          if(result.success == false)
                            alert("User already exists")
                          else{
@@ -105,10 +105,10 @@ export class LoginComponent implements OnInit {
                          this.rstatus=false;
                          }
                      },
-                     ()=>{
+                     error: ()=>{
                          alert("There is problem , Please try again or later")
                          this.rstatus=false;
-                     }
+                     }}
                   )
               }
           
