@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  pictures:string[]=["shipping.png","wishlist.png","profile.png"];
+  urls:string[]=["orders","wishlist","profile"];
+  strings:string[]=["Orders","Wishlist","Profile"];
+
   constructor() { }
 
   ngOnInit(): void {
