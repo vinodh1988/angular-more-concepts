@@ -6,6 +6,8 @@ import { SharedModule } from '../shared/shared.module';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { ProductrowComponent } from './userhome/productrow/productrow.component';
 import { ProductComponent } from './userhome/product/product.component';
+import { DetailsComponent } from './userhome/details/details.component';
+import { FormsModule } from '@angular/forms';
 
 
 const route:Routes=[
@@ -17,6 +19,10 @@ const route:Routes=[
     {
       path: "",
       component: UserhomeComponent
+    },
+    {
+      path:"details",
+      component: DetailsComponent
     }
   ]
 }
@@ -28,12 +34,14 @@ const route:Routes=[
     HomeComponent,
     UserhomeComponent,
     ProductrowComponent,
-    ProductComponent
+    ProductComponent,
+    DetailsComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(route),
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class UserModule { }

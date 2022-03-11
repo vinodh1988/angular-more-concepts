@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { product } from 'src/app/models/types';
 
 @Component({
   selector: 'app-product',
@@ -7,9 +9,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
   @Input() product:any;
-  constructor() { }
+  constructor(public router:Router,public route:ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
+  changeRoute(){
+    this.router.navigate(['details'],{relativeTo:this.route,state:this.product});
+  }
 }

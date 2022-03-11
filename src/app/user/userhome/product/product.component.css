@@ -4,6 +4,7 @@
     margin: 20px;
     box-shadow: 0px 5px 5px gray;
     display: inline-block;
+    cursor: pointer;
 }
 
 .product .product-image{
