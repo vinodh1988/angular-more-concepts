@@ -28,7 +28,7 @@ username:any=""
     else
        this.cartCount=0;
 
-       this.router.navigate(['temp'], {relativeTo:this.route});
+       
   }
   
   navigate(url:string){
