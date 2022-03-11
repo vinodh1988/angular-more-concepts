@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { UserhomeComponent } from './userhome/userhome.component';
+import { ProductrowComponent } from './userhome/productrow/productrow.component';
+import { ProductComponent } from './userhome/product/product.component';
 
 
 const route:Routes=[
@@ -24,7 +26,9 @@ const route:Routes=[
 @NgModule({
   declarations: [
     HomeComponent,
-    UserhomeComponent
+    UserhomeComponent,
+    ProductrowComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,

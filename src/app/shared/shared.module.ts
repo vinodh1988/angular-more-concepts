@@ -4,6 +4,7 @@ import { MenuOutlineComponent } from './menu-outline/menu-outline.component';
 import { MaterialModule } from '../material/material.module';
 import { ScrollDirective } from './directives/scroll.directive';
 import { ScrollBackDirective } from './directives/scroll-back.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -15,7 +16,8 @@ import { ScrollBackDirective } from './directives/scroll-back.directive';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   exports:[MenuOutlineComponent,  ScrollDirective,
     ScrollBackDirective]
