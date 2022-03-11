@@ -9,11 +9,11 @@ export class ProductService {
 
   constructor(private http:HttpClient
     ) { }
-  public getProducts():Observable<object>{
+  public getProducts():Observable<any>{
     return this.http.get("http://localhost:4500/products");
   }
 
-  public getProducts2(pattern:string):Observable<object>{
+  public getProducts2(pattern:string):Observable<any>{
     return this.http.get("http://localhost:4500/products?type="+pattern);
   }
 }
